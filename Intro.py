@@ -165,7 +165,7 @@ with col1:
     st.subheader("💚 Introducción")
     st.image(Image.open("1.jpg"))
     st.write("Primera aplicación.")
-    st.markdown("<a class='neon-link' href='https://miprimeraappcatixx.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
+    st.markdown("<a class='neon-link' href='https://1-intro-w6eubfucnyzmtme8uxjvpc.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='section-chip'>Audio</div>", unsafe_allow_html=True)
