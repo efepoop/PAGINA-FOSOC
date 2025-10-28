@@ -163,21 +163,21 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("<div class='section-chip'>Intro</div>", unsafe_allow_html=True)
     st.subheader("💚 Introducción")
-    st.image(Image.open("imagen1.jpg"))
+    st.image(Image.open("1.jpg"))
     st.write("Primera aplicación.")
     st.markdown("<a class='neon-link' href='https://miprimeraappcatixx.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='section-chip'>Audio</div>", unsafe_allow_html=True)
     st.subheader("💚 Texto a Voz")
-    st.image(Image.open("imagen2.jpg"))
+    st.image(Image.open("2.jpg"))
     st.write("Convierte texto a audio.")
     st.markdown("<a class='neon-link' href='https://pagina2profe.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='section-chip'>Audio</div>", unsafe_allow_html=True)
     st.subheader("💚 Voz a Texto")
-    st.image(Image.open("imagen3.jpg"))
+    st.image(Image.open("3.jpg"))
     st.write("Convierte voz en texto usando IA.")
     st.markdown("<a class='neon-link' href='https://pbeo6cxaxwky2mxj3cxj57.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
@@ -190,21 +190,21 @@ col4, col5, col6 = st.columns(3)
 with col4:
     st.markdown("<div class='section-chip'>Visión</div>", unsafe_allow_html=True)
     st.subheader("💚 Interfaz OCR")
-    st.image(Image.open("imagen4.jpg"))
+    st.image(Image.open("4.jpg"))
     st.write("Reconocimiento óptico de caracteres.")
     st.markdown("<a class='neon-link' href='https://ocr-audio-sunwazxyy3htz7w8eqm7yn.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col5:
     st.markdown("<div class='section-chip'>NLP</div>", unsafe_allow_html=True)
     st.subheader("💚 Análisis de Sentimiento")
-    st.image(Image.open("imagen5.jpg"))
+    st.image(Image.open("5.jpg"))
     st.write("Reconoce emociones de un texto.")
     st.markdown("<a class='neon-link' href='https://3uxhnpwvxuwdawcd85n3ee.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col6:
     st.markdown("<div class='section-chip'>NLP</div>", unsafe_allow_html=True)
     st.subheader("💚 Análisis de Texto (Inglés)")
-    st.image(Image.open("imagen6.jpg"))
+    st.image(Image.open("6.jpg"))
     st.write("Explora la relación entre textos y una pregunta.")
     st.markdown("<a class='neon-link' href='https://aafml3fw2lsqviu7k6dyjm.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
@@ -217,21 +217,21 @@ col7, col8, col9 = st.columns(3)
 with col7:
     st.markdown("<div class='section-chip'>NLP</div>", unsafe_allow_html=True)
     st.subheader("💚 Análisis de Texto (Español)")
-    st.image(Image.open("imagen7.jpg"))
+    st.image(Image.open("7.jpg"))
     st.write("Analiza el texto desde preguntas.")
     st.markdown("<a class='neon-link' href='https://uzvwnqkgpdvyafmupea9fu.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col8:
     st.markdown("<div class='section-chip'>Visión</div>", unsafe_allow_html=True)
     st.subheader("💚 Reconocimiento de Objetos")
-    st.image(Image.open("imagen8.jpg"))
+    st.image(Image.open("8.jpg"))
     st.write("Reconoce los objetos de una imagen.")
     st.markdown("<a class='neon-link' href='https://7gfmxhghfykz3hqwd5rtgw.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col9:
     st.markdown("<div class='section-chip'>Visión</div>", unsafe_allow_html=True)
     st.subheader("💚 Reconocimiento de Gestos")
-    st.image(Image.open("imagen9.jpg"))
+    st.image(Image.open("9.jpg"))
     st.write("Interpreta movimientos usando visión computacional.")
     st.markdown("<a class='neon-link' href='https://bzllgjxt9zzhxw72snvu7p.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
@@ -244,21 +244,21 @@ col10, col11, col12 = st.columns(3)
 with col10:
     st.markdown("<div class='section-chip'>Docs</div>", unsafe_allow_html=True)
     st.subheader("💚 Chat PDF")
-    st.image(Image.open("imagen10.jpg"))
+    st.image(Image.open("10.jpg"))
     st.write("Analiza el contenido de un documento PDF.")
     st.markdown("<a class='neon-link' href='https://ajjmaezetnmmeds42r2ttl.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col11:
     st.markdown("<div class='section-chip'>Visión</div>", unsafe_allow_html=True)
     st.subheader("💚 Interpretación de Imagen")
-    st.image(Image.open("imagen11.jpg"))
+    st.image(Image.open("11.jpg"))
     st.write("Análisis avanzado de imágenes con IA.")
     st.markdown("<a class='neon-link' href='https://yz2rgx5rxrqsnrjbegaw8d.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col12:
     st.markdown("<div class='section-chip'>UX</div>", unsafe_allow_html=True)
     st.subheader("💚 Interfaz Táctil")
-    st.image(Image.open("imagen12.jpg"))
+    st.image(Image.open("12.jpg"))
     st.write("Dibuja en un tablero interactivo.")
     st.markdown("<a class='neon-link' href='https://tablero-6pbavfx8iqfyobyfffug4g.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
@@ -271,21 +271,21 @@ col13, col14, col15 = st.columns(3)
 with col13:
     st.markdown("<div class='section-chip'>Visión</div>", unsafe_allow_html=True)
     st.subheader("💚 Reconocimiento de Bocetos")
-    st.image(Image.open("imagen13.jpg"))
+    st.image(Image.open("13.jpg"))
     st.write("Analiza los dibujos hechos en el tablero.")
     st.markdown("<a class='neon-link' href='https://drawrecog-htvmekqhjm2psqx3huthk9.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col14:
     st.markdown("<div class='section-chip'>IoT</div>", unsafe_allow_html=True)
     st.subheader("💚 Control MQTT (Botones)")
-    st.image(Image.open("imagen14.jpg"))
+    st.image(Image.open("14.jpg"))
     st.write("Control de dispositivos mediante MQTT y botones.")
     st.markdown("<a class='neon-link' href='https://sendcmqtt-cvddr5bndohn3vf69tazjd.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col15:
     st.markdown("<div class='section-chip'>IoT</div>", unsafe_allow_html=True)
     st.subheader("💚 Control MQTT (Voz)")
-    st.image(Image.open("imagen15.jpg"))
+    st.image(Image.open("15.jpg"))
     st.write("Control de dispositivos mediante comandos de voz.")
     st.markdown("<a class='neon-link' href='https://ctrlvoice-cwg7b2khfj2a7r2q4trjtu.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
