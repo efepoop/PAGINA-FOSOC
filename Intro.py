@@ -172,7 +172,7 @@ with col2:
     st.subheader("💚 Texto a Voz")
     st.image(Image.open("2.jpg"))
     st.write("Convierte texto a audio.")
-    st.markdown("<a class='neon-link' href='https://pagina2profe.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
+    st.markdown("<a class='neon-link' href='https://2---texto-a-voz-bbbq7gbxyukgrfeg6ehsmw.streamlit.app/' target='_blank'>Ir a la aplicación</a>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='section-chip'>Audio</div>", unsafe_allow_html=True)
