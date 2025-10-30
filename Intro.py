@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # =============================
-# Estilo FEID + CaFerxxo (Fondo verde suave, botones transparentes profesionales, bordes neon)
+# Estilo FEID + CaFerxxo (Fondo verde suave, bordes neon) + BOTÓN PRO
 # =============================
 page_bg = r"""
 <style>
@@ -21,7 +21,7 @@ page_bg = r"""
   --neon: #00FF6A;
   --bg1: #b8ffbf;
   --ink: #011b08;
-  --shadow: rgba(0,255,106,.8);
+  --shadow: rgba(0,255,106,.9);
 }
 
 [data-testid="stAppViewContainer"] {
@@ -47,54 +47,50 @@ h1 {
   margin-top: -10px;
 }
 
-/* Tarjetas */
+/* Tarjetas / imágenes */
 .stImage>img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 20px;
-  width: 330px !important;
-  height: 400px !important;
-  object-fit: cover;
+  display: block; margin: 0 auto; border-radius: 20px;
+  width: 330px !important; height: 400px !important; object-fit: cover;
   border: 4px solid var(--neon);
   box-shadow: 0 0 20px var(--shadow), inset 0 0 10px var(--neon);
   transition: transform .3s ease, box-shadow .3s ease;
 }
-.stImage>img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 35px var(--neon), 0 0 70px var(--shadow);
-}
+.stImage>img:hover { transform: scale(1.05); box-shadow: 0 0 35px var(--neon), 0 0 70px var(--shadow); }
 
-/* Botones transparentes profesionales */
-.stButton>button {
-  background: transparent !important;
-  color: var(--neon) !important;
-  border: 2px solid var(--neon) !important;
-  border-radius: 10px;
-  font-family: 'Chakra Petch', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: .6rem 1.4rem;
-  display: block;
-  margin: 0.7rem auto;
-  box-shadow: 0 0 12px rgba(0,255,106,.3);
-  transition: all .3s ease-in-out;
-}
-.stButton>button:hover {
-  background: rgba(0,255,106,.15) !important;
-  color: #000 !important;
-  border: 2px solid #000 !important;
-  box-shadow: 0 0 30px var(--shadow), inset 0 0 15px var(--neon);
-  transform: scale(1.08);
-}
-
-.section-chip {
-  display:inline-block; margin-bottom:6px; padding:.25rem .6rem;
-  border:2px solid var(--neon); border-radius:999px;
-  font-family:'Chakra Petch', sans-serif; font-size:.8rem; letter-spacing:.8px;
-  background:rgba(0,255,77,.1); color:#022c0e; text-transform:uppercase;
-}
+.section-chip { display:inline-block; margin-bottom:6px; padding:.25rem .6rem; border:2px solid var(--neon); border-radius:999px; font-family:'Chakra Petch', sans-serif; font-size:.8rem; letter-spacing:.8px; background:rgba(0,255,77,.1); color:#022c0e; text-transform:uppercase; }
 
 .hr { height:1px; background: linear-gradient(90deg, transparent, var(--neon), transparent); margin: 28px 0; }
+
+/* ===================== */
+/* BOTÓN PRO (glow continuo)
+/* ===================== */
+.stButton>button {
+  position: relative; isolation: isolate; /* para glow debajo */
+  background: transparent !important; color: var(--neon) !important;
+  border: 2px solid var(--neon) !important; border-radius: 12px;
+  font-family: 'Chakra Petch', sans-serif; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .6px;
+  padding: .7rem 1.6rem; display: block; margin: .9rem auto;
+  transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
+  animation: neonPulse 2.2s ease-in-out infinite;
+}
+
+/* Halo debajo del botón */
+.stButton>button:before{
+  content:""; position:absolute; inset:-6px; border-radius: inherit; z-index:-1;
+  background: radial-gradient(60% 60% at 50% 50%, rgba(0,255,106,.35), transparent 70%);
+  filter: blur(6px); opacity:.9;
+  animation: neonPulse 2.2s ease-in-out infinite;
+}
+
+.stButton>button:hover{ transform: translateY(-1px) scale(1.04); filter: brightness(1.08); box-shadow: 0 0 24px var(--shadow); }
+.stButton>button:active{ transform: scale(0.99); }
+
+@keyframes neonPulse {
+  0%   { box-shadow: 0 0 8px rgba(0,255,106,.35), 0 0 0 rgba(0,255,106,0); }
+  50%  { box-shadow: 0 0 18px rgba(0,255,106,.75), 0 0 36px rgba(0,255,106,.45); }
+  100% { box-shadow: 0 0 8px rgba(0,255,106,.35), 0 0 0 rgba(0,255,106,0); }
+}
 </style>
 """
 
