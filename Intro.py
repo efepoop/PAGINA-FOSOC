@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # =============================
-# Estilos FEID (ultra neón) + nueva tipografía + vista con 3 columnas por fila
+# Estilos FEID (ultra neón) + borde verde en cada cuadro
 # =============================
 page_bg = r"""
 <style>
@@ -50,6 +50,7 @@ h1 {
 .stImage>img {
   display:block; margin:auto; border-radius:18px; width:300px !important; height:400px !important;
   object-fit:cover !important; box-shadow:0 0 14px rgba(0,255,77,.45);
+  border: 4px solid var(--neon); /* Borde verde neón alrededor de las imágenes */
 }
 
 button, .stButton>button {
