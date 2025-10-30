@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # =============================
-# Estilo FEID + CaFerxxo (Fondo verde suave, botones negros premium, bordes neon)
+# Estilo FEID + CaFerxxo (Fondo verde suave, botones transparentes profesionales, bordes neon)
 # =============================
 page_bg = r"""
 <style>
@@ -64,9 +64,9 @@ h1 {
   box-shadow: 0 0 35px var(--neon), 0 0 70px var(--shadow);
 }
 
-/* Botones premium */
+/* Botones transparentes profesionales */
 .stButton>button {
-  background: #000 !important;
+  background: transparent !important;
   color: var(--neon) !important;
   border: 2px solid var(--neon) !important;
   border-radius: 10px;
@@ -76,14 +76,14 @@ h1 {
   padding: .6rem 1.4rem;
   display: block;
   margin: 0.7rem auto;
-  box-shadow: 0 0 20px rgba(0,255,106,.4);
+  box-shadow: 0 0 12px rgba(0,255,106,.3);
   transition: all .3s ease-in-out;
 }
 .stButton>button:hover {
-  background: rgba(0,255,106,.1) !important;
+  background: rgba(0,255,106,.15) !important;
   color: #000 !important;
   border: 2px solid #000 !important;
-  box-shadow: 0 0 40px var(--shadow), inset 0 0 15px var(--neon);
+  box-shadow: 0 0 30px var(--shadow), inset 0 0 15px var(--neon);
   transform: scale(1.08);
 }
 
