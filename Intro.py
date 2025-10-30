@@ -119,6 +119,6 @@ for i in range(0, 15, 3):
 # Footer
 st.markdown("""
 <p style='text-align:center; color:var(--ink); font-weight:900;'>
-  ⚡ Hecho con cariño para <span style='color:var(--neon); text-shadow:0 0 12px var(--neon);'>Felipe Osorno</span>. Estética FEID, verde ultra neón.
+  ⚡ Hecho con cariño por <span style='color:var(--neon); text-shadow:0 0 12px var(--neon);'>Felipe Osorno</span>. Estética CaFerxxo
 </p>
 """, unsafe_allow_html=True)
