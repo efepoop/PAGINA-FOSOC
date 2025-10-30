@@ -11,96 +11,123 @@ st.set_page_config(
 )
 
 # =============================
-# Estilos FEID (ultra neón) + botones centrados transparentes + borde verde
+# Estilo FEID + CaFerxxo (Verde fuerte, bordes neon, diseño profesional)
 # =============================
 page_bg = r"""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist:wght@300;400;700;900&family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@400;700&family=Orbitron:wght@500;700&display=swap');
 
-:root{
-  --neon:#00FF4D;
-  --bg-1:#caffbf;
-  --ink:#041004;
-  --ink-soft:#163b16;
+:root {
+  --neon: #00FF66;
+  --bg: #90FF6A;
+  --ink: #021B05;
+  --shadow: rgba(0,255,100,.8);
 }
 
-[data-testid="stAppViewContainer"]{
-  background: radial-gradient(circle at 15% 10%, var(--bg-1), #d6ffd6 45%, #eaffea 85%);
+[data-testid="stAppViewContainer"] {
+  background: linear-gradient(180deg, #90FF6A, #5AFF33 60%, #44DD22 100%);
   color: var(--ink);
-  font-family:'Urbanist', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
 }
 [data-testid="stHeader"]{ background: transparent; }
 
-.neon-particles{ position:fixed; inset:0; pointer-events:none; z-index:0; }
-.neon-particles span{ position:absolute; display:block; width:8px; height:8px; background:var(--neon); border-radius:50%; opacity:.45; filter:blur(2px) brightness(1.4); animation:floatMove linear infinite; box-shadow: 0 0 14px var(--neon), 0 0 28px var(--neon); }
-@keyframes floatMove{ 0%{ transform: translateY(100vh) translateX(0) scale(1); opacity:.2;} 50%{ transform: translateY(50vh) translateX(28px) scale(1.6); opacity:.7;} 100%{ transform: translateY(-10vh) translateX(-28px) scale(1); opacity:.35;} }
-
-h1,h2,h3,h4,h5,h6{ color: var(--ink); text-align:center; letter-spacing: 0.5px; font-family:'Chakra Petch', sans-serif; }
-
-h1 {
-  font-family:'Bebas Neue', sans-serif;
-  font-size: clamp(48px, 7vw, 110px);
-  text-shadow:0 0 28px rgba(0,255,77,.85), 0 0 48px rgba(0,255,120,.55);
-  margin:.25rem 0;
+.neon-particles span {
+  position: absolute; display: block; width: 10px; height: 10px;
+  background: var(--neon); border-radius: 50%; opacity: .3;
+  filter: blur(3px) brightness(1.3);
+  animation: floaty linear infinite;
+  box-shadow: 0 0 18px var(--shadow);
+}
+@keyframes floaty {
+  0% { transform: translateY(100vh) scale(1); opacity: .2; }
+  50% { transform: translateY(50vh) scale(1.4); opacity: .6; }
+  100% { transform: translateY(-10vh) scale(1); opacity: .3; }
 }
 
-.subhead { font-weight:900; letter-spacing:.8px; text-transform:uppercase; color:var(--ink-soft); text-align:center; }
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  font-size: clamp(60px, 7vw, 110px);
+  color: #000;
+  text-shadow: 0 0 25px var(--neon), 0 0 50px var(--shadow);
+}
+.subhead {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #023B0D;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -10px;
+}
 
+/* Tarjetas de apps */
 .stImage>img {
-  display:block; margin:auto; border-radius:18px; width:300px !important; height:400px !important;
-  object-fit:cover !important; box-shadow:0 0 14px rgba(0,255,77,.45);
-  border: 5px solid var(--neon); /* Borde verde neón alrededor de las imágenes */
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 330px !important;
+  height: 400px !important;
+  object-fit: cover;
+  border: 4px solid var(--neon);
+  box-shadow: 0 0 25px var(--shadow), inset 0 0 12px var(--neon);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.stImage>img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px var(--neon), 0 0 80px var(--shadow);
 }
 
 .stButton>button {
-  background-color: transparent !important;
+  background: transparent !important;
   color: var(--neon) !important;
   border: 2px solid var(--neon) !important;
   border-radius: 12px;
-  font-weight: 900;
-  letter-spacing: .4px;
-  padding: .6rem 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem auto;
-  box-shadow: 0 0 18px rgba(0,255,77,.4);
-  transition: all .3s ease;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .6rem 1.4rem;
+  display: block;
+  margin: 0.7rem auto;
+  box-shadow: 0 0 16px var(--shadow);
+  transition: all .3s ease-in-out;
 }
-
 .stButton>button:hover {
-  transform: scale(1.05);
-  background-color: rgba(0,255,77,.15) !important;
-  box-shadow: 0 0 30px rgba(0,255,77,.8);
-  filter: brightness(1.2);
+  background: rgba(0,255,100,.2) !important;
+  box-shadow: 0 0 35px var(--shadow), inset 0 0 12px var(--neon);
+  transform: scale(1.08);
 }
 
-.hr { height:1px; background: linear-gradient(90deg, transparent, rgba(0,255,77,.85), transparent); margin: 22px 0; }
+.section-chip {
+  display:inline-block; margin-bottom:6px; padding:.25rem .6rem;
+  border:2px solid var(--neon); border-radius:999px;
+  font-family:'Orbitron', sans-serif; font-size:.75rem; letter-spacing:.8px;
+  background:rgba(0,255,77,.15); color:#033d0a; text-transform:uppercase;
+}
 
-.section-chip{ display:inline-block; padding:.25rem .6rem; border:1.5px solid var(--neon); border-radius:999px; font-size:.8rem; font-weight:800; text-transform:uppercase; color:var(--ink-soft); background:rgba(0,255,77,.12); }
+.hr { height:1px; background: linear-gradient(90deg, transparent, var(--neon), transparent); margin: 28px 0; }
 </style>
 """
 
 st.markdown(page_bg, unsafe_allow_html=True)
 
-# Partículas neon
+# Fondo de partículas
 particle_html = "<div class='neon-particles'>" + ''.join([
-    f"<span style='left:{(i*3)%100}%;animation-duration:{7 + (i%6)}s;animation-delay:{i*.12}s;'></span>" for i in range(60)
+    f"<span style='left:{(i*3)%100}%;animation-duration:{6+(i%6)}s;animation-delay:{i*.1}s;'></span>" for i in range(80)
 ]) + "</div>"
 st.markdown(particle_html, unsafe_allow_html=True)
 
-# Encabezado
+# Header
 offset_html = """
 <h1>⚡ Portafolio de Aplicaciones con Inteligencia Artificial ⚡</h1>
-<div class='subhead'>Edición FEID — para <b>Felipe Osorno</b></div>
+<div class='subhead'>Edición CaFerxxo — por <b>Felipe Osorno</b></div>
 <div class='hr'></div>
 """
 st.markdown(offset_html, unsafe_allow_html=True)
 
-# Mostrar apps en filas de 3 columnas (como antes)
+# === Diseño de apps (3 por fila) ===
 imagenes = [f"{i}.jpg" for i in range(1,16)]
 apps = [
-    ("Intro", "🟢 Introducción", "Primera aplicación.", "https://1-intro-w6eubfucnyzmtme8uxjvpc.streamlit.app/"),
+    ("Intro", "💿 Introducción", "Primera aplicación.", "https://1-intro-w6eubfucnyzmtme8uxjvpc.streamlit.app/"),
     ("Audio", "🎧 Texto a Voz", "Convierte texto a audio.", "https://2---texto-a-voz-bbbq7gbxyukgrfeg6ehsmw.streamlit.app/"),
     ("Audio", "🎙️ Voz a Texto", "Convierte voz en texto usando IA.", "https://pbeo6cxaxwky2mxj3cxj57.streamlit.app/"),
     ("Visión", "👁️ Interfaz OCR", "Reconocimiento óptico de caracteres.", "https://ocr-audio-sunwazxyy3htz7w8eqm7yn.streamlit.app/"),
@@ -126,7 +153,7 @@ for i in range(0, 15, 3):
                 st.markdown(f"<div class='section-chip'>{cat}</div>", unsafe_allow_html=True)
                 st.subheader(title)
                 st.image(Image.open(imagenes[i + j]))
-                st.write(desc)
+                st.write(f"<p style='text-align:center; font-family:Urbanist; font-weight:500;'>{desc}</p>", unsafe_allow_html=True)
                 st.markdown(f"<div style='text-align:center;'><a href='{link}' target='_blank'><button>🚀 Ir a la aplicación</button></a></div>", unsafe_allow_html=True)
     st.markdown('<div class="hr"></div>', unsafe_allow_html=True)
 
