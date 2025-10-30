@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # =============================
-# Estilos FEID (ultra neón) + borde verde en cada cuadro
+# Estilos FEID (ultra neón) + botones centrados transparentes + borde verde
 # =============================
 page_bg = r"""
 <style>
@@ -19,21 +19,20 @@ page_bg = r"""
 
 :root{
   --neon:#00FF4D;
-  --neon-2:#39FF14;
   --bg-1:#caffbf;
   --ink:#041004;
   --ink-soft:#163b16;
 }
 
 [data-testid="stAppViewContainer"]{
-  background: radial-gradient(circle at 15% 10%, var(--bg-1), #e9ffe9 45%, #f4fff4 85%);
+  background: radial-gradient(circle at 15% 10%, var(--bg-1), #d6ffd6 45%, #eaffea 85%);
   color: var(--ink);
   font-family:'Urbanist', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 [data-testid="stHeader"]{ background: transparent; }
 
 .neon-particles{ position:fixed; inset:0; pointer-events:none; z-index:0; }
-.neon-particles span{ position:absolute; display:block; width:8px; height:8px; background:var(--neon); border-radius:50%; opacity:.45; filter:blur(2px) brightness(1.4); animation:floatMove linear infinite; box-shadow: 0 0 14px var(--neon), 0 0 28px var(--neon-2); }
+.neon-particles span{ position:absolute; display:block; width:8px; height:8px; background:var(--neon); border-radius:50%; opacity:.45; filter:blur(2px) brightness(1.4); animation:floatMove linear infinite; box-shadow: 0 0 14px var(--neon), 0 0 28px var(--neon); }
 @keyframes floatMove{ 0%{ transform: translateY(100vh) translateX(0) scale(1); opacity:.2;} 50%{ transform: translateY(50vh) translateX(28px) scale(1.6); opacity:.7;} 100%{ transform: translateY(-10vh) translateX(-28px) scale(1); opacity:.35;} }
 
 h1,h2,h3,h4,h5,h6{ color: var(--ink); text-align:center; letter-spacing: 0.5px; font-family:'Chakra Petch', sans-serif; }
@@ -41,7 +40,7 @@ h1,h2,h3,h4,h5,h6{ color: var(--ink); text-align:center; letter-spacing: 0.5px; 
 h1 {
   font-family:'Bebas Neue', sans-serif;
   font-size: clamp(48px, 7vw, 110px);
-  text-shadow:0 0 28px rgba(0,255,77,.75), 0 0 48px rgba(0,255,120,.5);
+  text-shadow:0 0 28px rgba(0,255,77,.85), 0 0 48px rgba(0,255,120,.55);
   margin:.25rem 0;
 }
 
@@ -50,17 +49,31 @@ h1 {
 .stImage>img {
   display:block; margin:auto; border-radius:18px; width:300px !important; height:400px !important;
   object-fit:cover !important; box-shadow:0 0 14px rgba(0,255,77,.45);
-  border: 4px solid var(--neon); /* Borde verde neón alrededor de las imágenes */
+  border: 5px solid var(--neon); /* Borde verde neón alrededor de las imágenes */
 }
 
-button, .stButton>button {
-  background:#071e07 !important; color:var(--neon) !important;
-  border-radius:12px; border:2px solid var(--neon) !important;
-  font-weight:900; letter-spacing:.4px; padding:.6rem 1rem;
-  box-shadow:0 0 18px rgba(0,255,77,.5);
-  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+.stButton>button {
+  background-color: transparent !important;
+  color: var(--neon) !important;
+  border: 2px solid var(--neon) !important;
+  border-radius: 12px;
+  font-weight: 900;
+  letter-spacing: .4px;
+  padding: .6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  box-shadow: 0 0 18px rgba(0,255,77,.4);
+  transition: all .3s ease;
 }
-button:hover{ transform:translateY(-2px) scale(1.03); filter:brightness(1.25); box-shadow:0 0 28px rgba(0,255,77,.8); }
+
+.stButton>button:hover {
+  transform: scale(1.05);
+  background-color: rgba(0,255,77,.15) !important;
+  box-shadow: 0 0 30px rgba(0,255,77,.8);
+  filter: brightness(1.2);
+}
 
 .hr { height:1px; background: linear-gradient(90deg, transparent, rgba(0,255,77,.85), transparent); margin: 22px 0; }
 
@@ -114,7 +127,7 @@ for i in range(0, 15, 3):
                 st.subheader(title)
                 st.image(Image.open(imagenes[i + j]))
                 st.write(desc)
-                st.markdown(f"<a href='{link}' target='_blank'><button class='stButton'>🚀 Ir a la aplicación</button></a>", unsafe_allow_html=True)
+                st.markdown(f"<div style='text-align:center;'><a href='{link}' target='_blank'><button>🚀 Ir a la aplicación</button></a></div>", unsafe_allow_html=True)
     st.markdown('<div class="hr"></div>', unsafe_allow_html=True)
 
 # Footer
