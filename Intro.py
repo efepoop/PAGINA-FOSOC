@@ -108,7 +108,7 @@ st.markdown(offset_html, unsafe_allow_html=True)
 imagenes = [f"{i}.jpg" for i in range(1,16)]
 apps = [
     ("Intro", "💿 Introducción", "Primera aplicación.", "https://uno-intro-3kh47tt2nwx4537puvxc4w.streamlit.app/"),
-    ("Audio", "🎧 Texto a Voz", "Convierte texto a audio.", "https://2---texto-a-voz-bbbqukgrfeg6ehsmw.streamlit.app/"),
+    ("Audio", "🎧 Texto a Voz", "Convierte texto a audio.", "https://github.com/efepoop/DOS/blob/main/app.py"),
     ("Audio", "🎙️ Voz a Texto", "Convierte voz en texto usando IA.", "https://3traductor-dzburceqn8p4ayptvm.streamlit.app//"),
     ("Visión", "👁️ Interfaz OCR", "Reconocimiento óptico de caracteres.", "https://4---interfaz-ocr-ppu3xy6nffwgigjg.streamlit.app/"),
     ("NLP", "💬 Análisis de Sentimiento", "Reconoce emociones de un texto.", "https://3uxhnpwvxuwdawcd85n3ereamlit.app/"),
