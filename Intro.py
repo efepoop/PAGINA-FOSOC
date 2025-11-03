@@ -107,7 +107,7 @@ st.markdown(offset_html, unsafe_allow_html=True)
 # === Diseño de apps (3 por fila) ===
 imagenes = [f"{i}.jpg" for i in range(1,16)]
 apps = [
-    ("Intro", "💿 Introducción", "Primera aplicación.", "https://1-intro-w6eubfucnyzmtme8uxjvpc.streamlit.app/"),
+    ("Intro", "💿 Introducción", "Primera aplicación.", "https://1-primero-intro-iuhcgs2mi9i3xwr4pwy3jt.streamlit.app/"),
     ("Audio", "🎧 Texto a Voz", "Convierte texto a audio.", "https://2---texto-a-voz-bbbq7gbxyukgrfeg6ehsmw.streamlit.app/"),
     ("Audio", "🎙️ Voz a Texto", "Convierte voz en texto usando IA.", "https://pbeo6cxaxwky2mxj3cxj57.streamlit.app/"),
     ("Visión", "👁️ Interfaz OCR", "Reconocimiento óptico de caracteres.", "https://ocr-audio-sunwazxyy3htz7w8eqm7yn.streamlit.app/"),
