@@ -109,7 +109,7 @@ imagenes = [f"{i}.jpg" for i in range(1,16)]
 apps = [
     ("Intro", "💿 Introducción", "Primera aplicación.", "https://1-primero-intro-iuhcgs2mi9i3xwr4pwy3jt.streamlit.app/"),
     ("Audio", "🎧 Texto a Voz", "Convierte texto a audio.", "https://2---texto-a-voz-bbbq7gbxyukgrfeg6ehsmw.streamlit.app/"),
-    ("Audio", "🎙️ Voz a Texto", "Convierte voz en texto usando IA.", "https://pbeo6cxaxwky2mxj3cxj57.streamlit.app/"),
+    ("Audio", "🎙️ Voz a Texto", "Convierte voz en texto usando IA.", "https://3traductor-dzburcje23eqn8p4ayptvm.streamlit.app//"),
     ("Visión", "👁️ Interfaz OCR", "Reconocimiento óptico de caracteres.", "https://ocr-audio-sunwazxyy3htz7w8eqm7yn.streamlit.app/"),
     ("NLP", "💬 Análisis de Sentimiento", "Reconoce emociones de un texto.", "https://3uxhnpwvxuwdawcd85n3ee.streamlit.app/"),
     ("NLP", "🧠 Análisis de Texto (Inglés)", "Explora la relación entre textos y una pregunta.", "https://aafml3fw2lsqviu7k6dyjm.streamlit.app/"),
