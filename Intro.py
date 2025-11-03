@@ -107,21 +107,21 @@ st.markdown(offset_html, unsafe_allow_html=True)
 # === Diseño de apps (3 por fila) ===
 imagenes = [f"{i}.jpg" for i in range(1,16)]
 apps = [
-    ("Intro", "💿 Introducción", "Primera aplicación.", "https://1-primero-intro-iuhcgs2mi9i3xwr4pwy3jt.streamlit.app/"),
-    ("Audio", "🎧 Texto a Voz", "Convierte texto a audio.", "https://2---texto-a-voz-bbbq7gbxyukgrfeg6ehsmw.streamlit.app/"),
-    ("Audio", "🎙️ Voz a Texto", "Convierte voz en texto usando IA.", "https://3traductor-dzburcje23eqn8p4ayptvm.streamlit.app//"),
-    ("Visión", "👁️ Interfaz OCR", "Reconocimiento óptico de caracteres.", "https://4---interfaz-ocr-pcsutespu3xy6nffwgigjg.streamlit.app/"),
-    ("NLP", "💬 Análisis de Sentimiento", "Reconoce emociones de un texto.", "https://3uxhnpwvxuwdawcd85n3ee.streamlit.app/"),
-    ("NLP", "🧠 Análisis de Texto (Inglés)", "Explora la relación entre textos y una pregunta.", "https://aafml3fw2lsqviu7k6dyjm.streamlit.app/"),
-    ("NLP", "🗣️ Análisis de Texto (Español)", "Analiza el texto desde preguntas.", "https://uzvwnqkgpdvyafmupea9fu.streamlit.app/"),
-    ("Visión", "📸 Reconocimiento de Objetos", "Reconoce los objetos de una imagen.", "https://7gfmxhghfykz3hqwd5rtgw.streamlit.app/"),
-    ("Visión", "✋ Reconocimiento de Gestos", "Interpreta movimientos usando visión computacional.", "https://bzllgjxt9zzhxw72snvu7p.streamlit.app/"),
-    ("Docs", "📄 Chat PDF", "Analiza el contenido de un documento PDF.", "https://ajjmaezetnmmeds42r2ttl.streamlit.app/"),
-    ("Visión", "🧩 Interpretación de Imagen", "Análisis avanzado de imágenes con IA.", "https://yz2rgx5rxrqsnrjbegaw8d.streamlit.app/"),
-    ("UX", "🎨 Interfaz Táctil", "Dibuja en un tablero interactivo.", "https://tablero-6pbavfx8iqfyobyfffug4g.streamlit.app/"),
-    ("Visión", "✏️ Reconocimiento de Bocetos", "Analiza los dibujos hechos en el tablero.", "https://drawrecog-htvmekqhjm2psqx3huthk9.streamlit.app/"),
-    ("IoT", "🔘 Control MQTT (Botones)", "Control de dispositivos mediante MQTT y botones.", "https://sendcmqtt-cvddr5bndohn3vf69tazjd.streamlit.app/"),
-    ("IoT", "🎤 Control MQTT (Voz)", "Control de dispositivos mediante comandos de voz.", "https://ctrlvoice-cwg7b2khfj2a7r2q4trjtu.streamlit.app/")
+    ("Intro", "💿 Introducción", "Primera aplicación.", "https://1-primero-introi3xwr4pwy3jt.streamlit.app/"),
+    ("Audio", "🎧 Texto a Voz", "Convierte texto a audio.", "https://2---texto-a-voz-bbbqukgrfeg6ehsmw.streamlit.app/"),
+    ("Audio", "🎙️ Voz a Texto", "Convierte voz en texto usando IA.", "https://3traductor-dzburceqn8p4ayptvm.streamlit.app//"),
+    ("Visión", "👁️ Interfaz OCR", "Reconocimiento óptico de caracteres.", "https://4---interfaz-ocr-ppu3xy6nffwgigjg.streamlit.app/"),
+    ("NLP", "💬 Análisis de Sentimiento", "Reconoce emociones de un texto.", "https://3uxhnpwvxuwdawcd85n3ereamlit.app/"),
+    ("NLP", "🧠 Análisis de Texto (Inglés)", "Explora la relación entre textos y una pregunta.", "https:3fw2lsqviu7k6dyjm.streamlit.app/"),
+    ("NLP", "🗣️ Análisis de Texto (Español)", "Analiza el texto desde preguntas.", "https://uzvwnqkgpdvyafm9fu.streamlit.app/"),
+    ("Visión", "📸 Reconocimiento de Objetos", "Reconoce los objetos de una imagen.", "https://7gfmxhghqwd5rtgw.streamlit.app/"),
+    ("Visión", "✋ Reconocimiento de Gestos", "Interpreta movimientos usando visión computacional.", "https://bzllhxw72snvu7p.streamlit.app/"),
+    ("Docs", "📄 Chat PDF", "Analiza el contenido de un documento PDF.", "https://ajjmameds42r2ttl.streamlit.app/"),
+    ("Visión", "🧩 Interpretación de Imagen", "Análisis avanzado de imágenes con IA.", "https://yz2rjbegaw8d.streamlit.app/"),
+    ("UX", "🎨 Interfaz Táctil", "Dibuja en un tablero interactivo.", "https://tablero-6pbavfx8iqfyobyg4g.streamlit.app/"),
+    ("Visión", "✏️ Reconocimiento de Bocetos", "Analiza los dibujos hechos en el tablero.", "https://drawtvmekqhjm2psqx3huthk9.streamlit.app/"),
+    ("IoT", "🔘 Control MQTT (Botones)", "Control de dispositivos mediante MQTT y botones.", "https://sendc-cvddr5bndohn3vf69tazjd.streamlit.app/"),
+    ("IoT", "🎤 Control MQTT (Voz)", "Control de dispositivos mediante comandos de voz.", "https://ctrlvoia7r2q4trjtu.streamlit.app/")
 ]
 
 for i in range(0, 15, 3):
